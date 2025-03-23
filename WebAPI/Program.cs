@@ -60,11 +60,6 @@ app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 
-// if (app.Environment.IsDevelopment())
-// {
-//     app.MapOpenApi();
-// }
-
 app.MapGet("/", () =>
 {
     return "API is running!";
